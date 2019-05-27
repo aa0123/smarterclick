@@ -1,0 +1,101 @@
+
+  body{
+
+    font-family: Arail, sans-serif;
+    background-color: rgb(245, 245, 245);
+  }
+
+  .table-wrapper {
+
+    position: relative;
+    top: 20px;
+    right: 0;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    margin: 20px auto;
+    background: rgb(255, 255, 255);
+    padding: 10px;	
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+
+    }
+
+    table thead {
+        background-color: rgb(243, 98, 54);
+        color: white;
+
+    }
+
+    img {
+    width: 70%;
+    height: auto;
+    padding: 10px;
+    margin: 10px auto;
+
+    }
+
+    p {
+        padding: 10px;
+    }
+
+    .input-group {
+    padding: 10px;
+    }
+
+    .results-holder {
+    padding: 10px;
+    }
+
+
+    @media only screen and (max-width: 1000px) {
+
+        table thead, tbody, th, td, tr {
+            display: block;
+        }
+        
+
+        thead tr {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+
+        
+
+
+        tr { border: 1px solid #ccc; }
+        td {
+            border: none;
+            border-bottom: 1px solid #eee;
+            position: relative;
+            padding-left: 200px;
+            margin-left: 150px;
+        }
+
+        td:before {
+            position: absolute;
+            top: 12px;
+            left: 6px;
+            width: 200px;
+            padding-right: 40px;
+            white-space: nowrap;
+            margin-left: -150px;
+        }
+
+
+        .results td:nth-of-type(1):before { content: "User ID"; }
+        .results td:nth-of-type(2):before { content: "Name"; }
+        .results td:nth-of-type(3):before { content: "Email"; }
+        .results td:nth-of-type(4):before { content: "Group";}
+        .results td:nth-of-type(5):before { content: "View | Delete";}
+
+        .logs-table td:nth-of-type(1):before { content: "Log ID"; }
+        .logs-table td:nth-of-type(2):before { content: "User"; }
+        .logs-table td:nth-of-type(3):before { content: "Date"; }
+        .logs-table td:nth-of-type(4):before { content: "Type";}
+        .logs-table td:nth-of-type(5):before { content: "Message";}
+    
+    }
+
+
+
