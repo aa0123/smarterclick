@@ -40,15 +40,15 @@ output the result as a table. Variable $row will be set as numeric array; 0 = Us
                 $setDate =  $timestamp->format('M j Y g:i A');
                 $output .=
                  '
-                    // <tbody>
-                    //     <tr>
-                    //         <td id='.$row[0].'> '.$row[0]. '</td>
-                    //         <td>' .$row[1]. '</td>
-                    //         <td>' .$setDate. '</td>
-                    //         <td>' .$row[3]. '</td>
-                    //         <td>' .$row[4]. '</td>
-                    //     </tr>
-                    // </tbody>
+                    <tbody>
+                        <tr>
+                            <td id='.$row[0].'> '.$row[0]. '</td>
+                            <td>' .$row[1]. '</td>
+                            <td>' .$setDate. '</td>
+                            <td>' .$row[3]. '</td>
+                            <td>' .$row[4]. '</td>
+                        </tr>
+                    </tbody>
                     
                 ';
             }
